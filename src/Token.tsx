@@ -15,8 +15,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Button } from "./components/ui/button"
 import { featuredCoinsService } from './services/featuredCoins'
 import { FeaturedCoinsManager } from './components/FeaturedCoinsManager';
+import Header from "@/components/ui/header";
 
-export default function App() {
+export default function Token() {
   const [crypto, setCrypto] = useState('starknet')
   const [news, setNews] = useState<NewsItem[]>([])
   const [price, setPrice] = useState<CryptoPrice>({
@@ -77,14 +78,19 @@ export default function App() {
   const activeFeaturedCoins = featuredCoins.filter(coin => coin.isActive);
 
   return (
+    <div  className={` bg-gray-950 font-inter text-base text-gray-200 antialiased`}>
+   
+
     <Layout>
+
       <div className="container mx-auto p-4 text-white min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
         {/* Header Section - Made responsive */}
-        <div className='font-semibold text-4xl mt-3 mb-7'>
-        Crypsphere <span className='mr-7 pr-7 text-xl text--600'>crypto trading Analysis using AI Agent</span>
+        <div className='font-semibold  mt-3 mb-7'>
+        <Header />
         </div>
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
           <div className="flex flex-col w-full md:w-auto gap-4">
+            <h1 className='mb-8 text-2xl text-indigo-200/65 justify-center'> Token Insight and Risk analysis </h1>
             {/* Crypto Selection */}
             <div className="flex items-center gap-2">
               <Coins className="w-8 h-8 text-blue-400" />
@@ -247,5 +253,6 @@ export default function App() {
         </div>
       </div>
     </Layout>
+    </div>
   );
 }

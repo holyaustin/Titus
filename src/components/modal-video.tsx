@@ -44,9 +44,9 @@ export default function ModalVideo({
       {/* Video thumbnail */}
       <button
         className="group relative flex items-center justify-center rounded-2xl focus:outline-hidden focus-visible:ring-3 focus-visible:ring-indigo-200"
-        onClick={() => {
+       /* onClick={() => {
           setModalOpen(true);
-        }}
+        }}*/
         aria-label="Watch the video"
         data-aos="fade-up"
         data-aos-delay={200}
@@ -93,7 +93,7 @@ export default function ModalVideo({
             <span className="text-sm font-medium leading-tight text-gray-300">
               Watch Demo
               <span className="text-gray-600"> - </span>
-              3:47
+              {/**3:47*/}
             </span>
           </span>
         </span>

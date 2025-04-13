@@ -1,6 +1,6 @@
 import VideoThumb from "@/images/hero-image-01.jpg";
 import ModalVideo from "@/components/modal-video";
-
+import {Link} from "react-router-dom";
 
 
 export default function HeroHome() {
@@ -27,33 +27,34 @@ export default function HeroHome() {
               </p>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
-                  <a
+                <Link to="/token"
+                  
                     className="btn group mb-4 w-full bg-blue-800 text-white shadow-blue-300 hover:bg-blue-700 sm:mb-0 sm:w-auto p-5 font-semibold "
-                    href="#0"
+                    
                   >
                     <span className="relative inline-flex items-center pr-3">
                       Token Analysis
 
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <div data-aos="fade-up" data-aos-delay={600}>
-                  <a
+                <Link to="/yield"
                     className="p-5 btn relative w-full bg-gray-800 text-white before:pointer-events-none font-semibold before:absolute before:inset-0 hover:bg-gray-700 sm:ml-4 sm:w-auto "
-                    href="#0"
+                    
                   >
                     <span className="relative inline-flex items-center pr-3">
                     Yield Agent
                     </span>
                  
-                  </a>
+                    </Link>
                 </div>
               </div>
             </div>
           </div>
 
           <ModalVideo
-            img={VideoThumb}
+            thumb={VideoThumb}
             thumbWidth={1104}
             thumbHeight={576}
             thumbAlt="Modal video thumbnail"
