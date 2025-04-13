@@ -1,6 +1,6 @@
-import VideoThumb from "@/images/hero-image-01.jpg";
-import logo from "../../images/logo.svg";
-//import ModalVideo from "@/components/modal-video";
+// import VideoThumb from "@/images/hero-image-01.jpg";
+// import logo from "../../images/logo.svg";
+
 
 export default function HeroHome() {
   return (
@@ -9,9 +9,9 @@ export default function HeroHome() {
         {/* Hero content */}
         <div className="py-12 md:py-20">
           {/* Section header */}
-          <div className="pb-12 text-center md:pb-20">
+          <div className="pb-6 text-center md:pb-10">
             <h1
-              className="pb-5 text-4xl font-semibold mb-8 text-white md:text-5xl " 
+              className="pb-3 text-4xl font-semibold mb-8 text-white md:text-5xl " 
                
             >
              Crypto Yield & token Analysis using AI Agent.
@@ -27,7 +27,7 @@ export default function HeroHome() {
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
                 <div data-aos="fade-up" data-aos-delay={400}>
                   <a
-                    className="btn group mb-4 w-full bg-blue-800 text-white shadow-blue-300 hover:bg-blue-500 sm:mb-0 sm:w-auto p-5 font-semibold "
+                    className="btn group mb-4 w-full bg-blue-800 text-white shadow-blue-300 hover:bg-blue-700 sm:mb-0 sm:w-auto p-5 font-semibold "
                     href="#0"
                   >
                     <span className="relative inline-flex items-center pr-3">
@@ -38,7 +38,7 @@ export default function HeroHome() {
                 </div>
                 <div data-aos="fade-up" data-aos-delay={600}>
                   <a
-                    className="p-5 btn relative w-full bg-blue-900 text-black before:pointer-events-none font-semibold before:absolute before:inset-0 before:rounded-[inherit] hover:bg-gray-400 sm:ml-4 sm:w-auto "
+                    className="p-5 btn relative w-full bg-gray-800 text-white before:pointer-events-none font-semibold before:absolute before:inset-0 hover:bg-gray-700 sm:ml-4 sm:w-auto "
                     href="#0"
                   >
                     <span className="relative inline-flex items-center pr-3">
