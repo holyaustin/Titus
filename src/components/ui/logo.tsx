@@ -1,11 +1,12 @@
-import Link from "next/link";
-import Image from "next/image";
-import logo from "@/public/images/logo.svg";
+//import Link from "next/link";
+// Image from "next/image";
+import logo from "../../images/logo.svg";
 
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex shrink-0" aria-label="Cruip">
-      <Image src={logo} alt="Chainmind Logo" width={32} height={32} />
-    </Link>
+    <a href="/" className="inline-flex shrink-0" aria-label="Cruip">
+    <img src={logo} alt="titus Logo" width={32} height={32} />
+      
+    </a>
   );
 }

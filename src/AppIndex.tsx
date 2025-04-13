@@ -1,5 +1,6 @@
-// import { useEffect, useState } from 'react'
-// import { Layout } from './components/Layout'
+import PageIllustration from "@/components/page-illustration";
+import Hero from "@/components/hero-home";
+import Header from "@/components/ui/header";
 
 
 export default function AppIndex() {
@@ -12,12 +13,12 @@ export default function AppIndex() {
         className={` bg-gray-950 font-inter text-base text-gray-200 antialiased`}
       >
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
-            <div className='font-semibold text-4xl mt-3 mb-7'>
-                  Agent Titus <span className='mr-7 pr-7 text-xl text--600'>crypto Yeild Analysis and investment using AI Agent</span>
-            </div>
+
+ 
+        <Header />
+       <PageIllustration />
+      <Hero />
 {/**
-              <Header />
-              <Hero />
    */}
         </div>
       </body>
