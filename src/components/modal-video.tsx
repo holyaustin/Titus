@@ -1,13 +1,10 @@
-"use client";
-
 import { useState, useRef } from "react";
-import type { StaticImageData } from "next/image";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
-import Image from "next/image";
-import SecondaryIllustration from "@/public/images/secondary-illustration.svg";
+import SecondaryIllustration from "@/images/secondary-illustration.svg";
+import thumb1 from "@/images/bot2.jpg";
 
 interface ModalVideoProps {
-  thumb: StaticImageData;
+  thumb: string;
   thumbWidth: number;
   thumbHeight: number;
   thumbAlt: string;
@@ -35,7 +32,7 @@ export default function ModalVideo({
         className="pointer-events-none absolute bottom-8 left-1/2 -z-10 -ml-28 -translate-x-1/2 translate-y-1/2"
         aria-hidden="true"
       >
-        <Image
+        <img
           className="md:max-w-none"
           src={SecondaryIllustration}
           width={1165}
@@ -55,12 +52,12 @@ export default function ModalVideo({
         data-aos-delay={200}
       >
         <figure className="relative overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
-          <Image
+          <img
             className="opacity-50 grayscale"
-            src={thumb}
+            src={thumb1}
             width={thumbWidth}
             height={thumbHeight}
-            priority
+            //priority
             alt={thumbAlt}
           />
         </figure>

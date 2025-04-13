@@ -1,5 +1,6 @@
-// import VideoThumb from "@/images/hero-image-01.jpg";
-// import logo from "../../images/logo.svg";
+import VideoThumb from "@/images/hero-image-01.jpg";
+import ModalVideo from "@/components/modal-video";
+
 
 
 export default function HeroHome() {
@@ -50,9 +51,9 @@ export default function HeroHome() {
               </div>
             </div>
           </div>
-{/**
+
           <ModalVideo
-            thumb={VideoThumb}
+            img={VideoThumb}
             thumbWidth={1104}
             thumbHeight={576}
             thumbAlt="Modal video thumbnail"
@@ -60,6 +61,7 @@ export default function HeroHome() {
             videoWidth={1920}
             videoHeight={1080}
           />
+          {/**
  */}
         </div>
       </div>
