@@ -13,10 +13,7 @@ from web3 import Web3
 
 from agent_hack.agent_manager import AgentManager
 
-GEMINI_API_KEY = "AIzaSyARicIbP2wB5Vsn9cTN93XPDxWaL5os3NM"
-CDP_API_KEY_NAME = "agent1"
-CDP_API_KEY_PRIVATE_KEY = "d048f4ca-0728-4062-b6cb-f513df4b19b1"
-NETWORK_ID = "8453"
+
 
 # GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 # CDP_API_KEY_NAME = os.environ["CDP_API_KEY_NAME"]
